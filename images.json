@@ -1,82 +1,82 @@
 {
-    "images": [
-        {
-            "imgPath": "img/places/australia.jpg",
-            "imgLocation": "Australia",
-            "description": "Loch Ard Gorge",
-            "date": "01/01/2016"
-        },
-        {
-            "imgPath": "img/places/austria.jpg",
-            "imgLocation": "Austria",
-            "description": "Austrian chapel",
-            "date": "01/02/2016"
-        },
-        {
-            "imgPath": "img/places/france.jpg",
-            "imgLocation": "Paris",
-            "description": "Eiffel Tower",
-            "date": "01/03/2016"
-        },
-        {
-            "imgPath": "img/places/greece.jpg",
-            "imgLocation": "Greece",
-            "description": "Greek coastline",
-            "date": "01/04/2016"
-        },
-        {
-            "imgPath": "img/places/hungary.jpg",
-            "imgLocation": "Hungary",
-            "description": "Budapest skyline",
-            "date": "01/05/2016"
-        },
-        {
-            "imgPath": "img/places/india.jpg",
-            "imgLocation": "India",
-            "description": "Taj Mahal",
-            "date": "01/06/2016"
-        },
-        {
-            "imgPath": "img/places/italy.jpg",
-            "imgLocation": "Italy",
-            "description": "Venice",
-            "date": "01/07/2016"
-        },
-        {
-            "imgPath": "img/places/japan.jpg",
-            "imgLocation": "Japan",
-            "description": "Hirosaki Castle",
-            "date": "01/08/2016"
-        },
-        {
-            "imgPath": "img/places/korea.jpg",
-            "imgLocation": "South Korea",
-            "description": "Seoul",
-            "date": "01/09/2016"
-        },
-        {
-            "imgPath": "img/places/norway.jpg",
-            "imgLocation": "Norway",
-            "description": "Countryside mountains",
-            "date": "01/10/2016"
-        },
-        {
-            "imgPath": "img/places/switzerland.jpg",
-            "imgLocation": "Switzerland",
-            "description": "Lake castle",
-            "date": "01/11/2016"
-        },
-        {
-            "imgPath": "img/places/thailand.jpg",
-            "imgLocation": "Thailand",
-            "description": "Beachline",
-            "date": "01/12/2016"
-        },
-        {
-            "imgPath": "img/places/turkey.jpg",
-            "imgLocation": "Turkey",
-            "description": "Istanbul",
-            "date": "01/13/2016"
-        }
+  "images": [
+    {
+      "imgPath": "img/mutants/angel.jpg",
+      "mutantClass": "Beta-Level",
+      "Name": "Warren Worthington III",
+      "Power": "Feathered wings granting flight; enhanced vision; later forms include regenerative healing and metal wings as Archangel."
+    },
+    {
+      "imgPath": "img/mutants/banshee.jpg",
+      "mutantClass": "Beta-Level",
+      "Name": "Sean Cassidy",
+      "Power": "Produces powerful sonic screams capable of flight, concussive force, and sound manipulation."
+    },
+    {
+      "imgPath": "img/mutants/colosus.jpg",
+      "mutantClass": "Alpha-Level",
+      "Name": "Piotr 'Peter' Nikolayevich Rasputin",
+      "Power": "Can transform his body into organic steel, granting superhuman strength, durability, and endurance."
+    },
+    {
+      "imgPath": "img/mutants/havok.jpg",
+      "mutantClass": "Alpha-Level",
+      "Name": "Alex Summers",
+      "Power": "Absorbs cosmic energy and projects it as powerful plasma blasts from his body."
+    },
+    {
+      "imgPath": "img/mutants/iceman.jpg",
+      "mutantClass": "Omega-Level",
+      "Name": "Bobby Drake",
+      "Power": "Manipulates moisture to create and control ice; can transform his body into organic ice form."
+    },
+    {
+      "imgPath": "img/mutants/magneto.jpg",
+      "mutantClass": "Omega-Level",
+      "Name": "Erik Lehnsherr (Max Eisenhardt)",
+      "Power": "Master of magnetism; can manipulate magnetic fields, control metal, and generate force fields."
+    },
+    {
+      "imgPath": "img/mutants/ngihtcrawler.jpg",
+      "mutantClass": "Beta-Level",
+      "Name": "Kurt Wagner",
+      "Power": "Teleportation, wall-crawling, superhuman agility, and shadow-blending; prehensile tail and night vision."
+    },
+    {
+      "imgPath": "img/mutants/storm",
+      "mutantClass": "Omega-Level",
+      "Name": "Ororo Munroe",
+      "Power": "Controls the weather; can summon storms, manipulate wind, lightning, and temperature."
+    },
+    {
+      "imgPath": "img/mutants/wolverine.jpg",
+      "mutantClass": "Alpha-Level",
+      "Name": "Logan (James Howlett)",
+      "Power": "Accelerated healing factor, enhanced senses and strength, retractable adamantium claws."
+    },
+    {
+      "imgPath": "img/mutants/apoc.jpg",
+      "mutantClass": "Omega-Level",
+      "Name": "En Sabah Nur (Apocalypse)",
+      "Power": "Immortality, molecular control, super strength, shapeshifting, and access to advanced Celestial technology."
+    },
+    {
+      "imgPath": "img/mutants/sunfire.jpg",
+      "mutantClass": "Alpha-Level",
+      "Name": "Shiro Yoshida",
+      "Power": "Generates superheated plasma, enabling flight and powerful fire-based attacks."
+    },
+    {
+      "imgPath": "img/mutants/quick.jpg",
+      "mutantClass": "Alpha-Level",
+      "Name": "Pietro Maximoff (Quicksilver)",
+      "Power": "Superhuman speed, reflexes, and accelerated perception."
+    },
+    {
+      "imgPath": "img/mutants/cyclopse.jpg",
+      "mutantClass": "Alpha-Level",
+      "Name": "Scott Summers",
+      "Power": "Projects powerful concussive optic blasts from his eyes, controlled with ruby quartz lenses."
+    }
   ]
 }
