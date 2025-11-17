@@ -95,6 +95,7 @@ body {
 .rot270 {
     transform: rotate(270deg);
 }
+
 body::before,
 body::after {
     content: "";
@@ -119,4 +120,12 @@ body {
     background-repeat: repeat;  /* Tiles the X logos */
     background-size: 100px;     /* Adjust size of the X logo */
     background-attachment: fixed;
+}
+
+/* Keep nav container positioned normally */
+#nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
