@@ -16,21 +16,22 @@ $(document).ready(() => {
     $('.details').slideToggle();
   });
 
+  // Navigation
   $('#nextPhoto').click(() => showNextPhoto());
   $('#prevPhoto').click(() => showPrevPhoto());
 
   fetchJSON();
 });
 
-// --- Arrow Animation with JS (starts as X in center) ---
+// --- Arrow Animation ---
 function initArrowAnimation() {
-  const $prev = $('#prevPhoto'); // x-arrow-left.png
-  const $next = $('#nextPhoto'); // x-arrow-right.png
+  const $prev = $('#prevPhoto'); 
+  const $next = $('#nextPhoto'); 
 
   const navWidth = $('#nav').width();
   const arrowWidth = $prev.width();
 
-  // Start arrows in center as an X with different rotations
+  // Start as X in the center
   $prev.css({
     position: 'absolute',
     left: '50%',
@@ -51,33 +52,36 @@ function initArrowAnimation() {
   $prev.animate({ opacity: 1 }, 300);
   $next.animate({ opacity: 1 }, 300);
 
-  // Animate to final positions
+  // Move arrows outward
   setTimeout(() => {
-    // --- Left arrow moves to left and faces left ---
+    // LEFT ARROW — should end rotated 360deg (same as 0deg; pointing left)
     $prev.animate({ left: 0, top: 0 }, {
       duration: 1000,
-      step: function() {
-        // rotate during animation for smooth effect
-        $(this).css('transform', 'rotate(180deg)');
-      },
       complete: function() {
-        // Ensure final rotation is exactly facing left
-        $(this).css({ position: '', left: '', top: '', transform: 'rotate(180deg)', opacity: '' });
+        $(this).css({
+          position: '',
+          left: '',
+          top: '',
+          transform: 'rotate(360deg)',   // <-- FIXED ROTATION
+          opacity: ''
+        });
       }
     });
 
-    // --- Right arrow moves to right and faces right ---
+    // RIGHT ARROW — ends at 0deg (already pointing right)
     $next.animate({ left: navWidth - arrowWidth, top: 0 }, {
       duration: 1000,
-      step: function() {
-        $(this).css('transform', 'rotate(0deg)');
-      },
       complete: function() {
-        // Ensure final rotation is exactly facing right
-        $(this).css({ position: '', left: '', top: '', transform: 'rotate(0deg)', opacity: '' });
+        $(this).css({
+          position: '',
+          left: '',
+          top: '',
+          transform: 'rotate(0deg)',
+          opacity: ''
+        });
       }
     });
-  }, 500); // delay 0.5s for fade-in
+  }, 500);
 }
 
 // Fetch JSON

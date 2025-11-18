@@ -1,9 +1,14 @@
 body {
     overflow-x: hidden;
     font-family: 'Century Gothic', sans-serif;
-    background: linear-gradient(135deg, #0a1a4f 40%, #123a8c 100%);
-    background-size: cover;
-    background-attachment: fixed;
+
+    /* Combined layered background */
+    background-image: 
+        url('img/xlogo.png'),              /* Repeating X logo */
+        linear-gradient(135deg, #0a1a4f 40%, #123a8c 100%);
+    background-repeat: repeat, no-repeat;  /* Logo repeats, gradient does not */
+    background-size: 100px, cover;         /* Logo size, gradient size */
+    background-attachment: fixed, fixed;   /* Both fixed while scrolling */
 }
 
 /* Main container for the slideshow and metadata */
@@ -12,7 +17,7 @@ body {
     max-width: 500px;
     width: 90%;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.1); 
+    background-color: rgba(255, 255, 255, 0.1);
     border: 3px solid #f9d400; /* X-Men yellow */
     border-radius: 12px;
     box-shadow: 0px 0px 20px rgba(255, 213, 0, 0.6);
@@ -29,8 +34,8 @@ body {
     width: 100%;
     max-width: 100%;
     height: auto;
-    max-height: 650px;     
-    object-fit: contain;    
+    max-height: 650px;
+    object-fit: contain;
     border-radius: 4px;
 }
 
@@ -66,11 +71,16 @@ body {
     transform: scale(1.1);
 }
 
+/* Force the LEFT arrow (prevPhoto) to face left */
+#prevPhoto {
+    transform: rotate(360deg);
+}
+
 /* Metadata container styling */
 .details {
-    border: 2px solid #f9d400; /* Yellow */
+    border: 2px solid #f9d400;
     padding: 15px;
-    background-color: #0a1a4f; /* Dark blue */
+    background-color: #0a1a4f;
     border-radius: 8px;
     color: #fff;
     font-size: 1rem;
@@ -81,46 +91,25 @@ body {
     margin: 10px 0;
 }
 
-/* Add CSS styles to rotate the element 90deg */
-.rot90 {
-    transform: rotate(90deg);
-}
+/* Rotations */
+.rot90 { transform: rotate(90deg); }
+.rot180 { transform: rotate(180deg); }
+.rot270 { transform: rotate(270deg); }
 
-/* Add CSS styles to rotate the element 180deg */
-.rot180 {
-    transform: rotate(180deg);
-}
-
-/* Add CSS styles to rotate the element 270deg */
-.rot270 {
-    transform: rotate(270deg);
-}
-
+/* Side bars */
 body::before,
 body::after {
     content: "";
     position: fixed;
     top: 0;
-    width: 60px;  /* Width of the side panels */
+    width: 60px;
     height: 100%;
-    background: linear-gradient(to bottom, #f9d400, #123a8c); /* Yellow to Blue */
-    z-index: -1; /* Behind content */
+    background: linear-gradient(to bottom, #f9d400, #123a8c);
+    z-index: -1;
 }
 
-body::before {
-    left: 0;
-}
-
-body::after {
-    right: 0;
-}
-
-body {
-    background-image: url('img/xlogo.png'), linear-gradient(135deg, #0a1a4f 40%, #123a8c 100%);
-    background-repeat: repeat;  /* Tiles the X logos */
-    background-size: 100px;     /* Adjust size of the X logo */
-    background-attachment: fixed;
-}
+body::before { left: 0; }
+body::after { right: 0; }
 
 /* Keep nav container positioned normally */
 #nav {
